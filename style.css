@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+}
+
+.nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+.nav h2 {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.nav h4 {
+    font-size: 1vw;
+}
+
+.nav i {
+    font-size: 1.6vw;
+    font-weight: 800;
+    display: none;
+}
+.nav button {
+    font-size: 1vw;
+    padding: 0.5vw 1vw;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.content {
+    width: 100%;
+    height: calc(100% - 100PX);
+    display: flex;
+    /* background-color: burlywood; */
+}
+
+.left {
+    height: 100%;
+    width: 55%;
+    /* background-color: red; */
+    padding: 5vw 4vw;
+}
+
+.left h1 {
+    font-size: 4.5vw;
+    line-height: 4.4vw;
+}
+
+.left h1 span {
+    color: lightseagreen;
+}
+
+.left p {
+    font-size: 1.2vw;
+    font-weight: 600px;
+    color: #666;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+
+.left button {
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.right {
+    height: 100%;
+    width: 45%;
+    /* background-color: beige; */
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* resposniv code mobile view  */
+
+@media (max-width:600px) {
+    .nav {
+        background: lightseagreen;
+        color: white;
+        padding: 0 5vw;
+        height: 60px;
+    }
+
+    .nav h2 {
+        font-size: 6vw;
+    }
+
+    .nav h4 {
+        display: none;
+    }
+
+    .nav i {
+        display: block;
+        font-size: 6vw;
+    }
+}
